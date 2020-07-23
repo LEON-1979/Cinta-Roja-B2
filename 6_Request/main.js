@@ -14,6 +14,7 @@ const obtenerBanda = (banda) => {
             //parse JSON
             const res = JSON.parse(body);
             if (res.artists !== null) {
+                
                 console.log(res.artists[0].strArtist);
                 console.log(res.artists[0].strWebsite);
                 console.log(res.artists[0].strBiographyES);

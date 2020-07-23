@@ -1,0 +1,24 @@
+{
+  "name": "6_request",
+  "version": "1.0.0",
+  "descripcion": "mi primer request",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo\"error: no test speccified\"&& exit 1"
+  },
+  "keywords": [
+    "npm",
+    "request",
+    "nodejs"
+  ],
+  "author": "leon mesa",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.88.2"
+  },
+  "description": "segunda request",
+  "repository": {
+    "type": "git",
+    "url": "main.js"
+  }
+}
