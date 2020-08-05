@@ -23,7 +23,7 @@ console.log (nuevoArreglo);
 
 
 //manera declarativa
-const nuevoArreglo = array.map((value)=> "${value} ${index} ${array}");
+const nuevoArreglo = array.map((value, index)=> " ${index} ${array}");
 console.log(nuevoArreglo);
 
 //imperativas

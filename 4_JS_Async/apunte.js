@@ -11,7 +11,10 @@
 //javaScript
 //python
 
+var nombre = "leon";
 
+let edad = 41;
+edad = 42;
 
 //error
 const pi = 3.1416;

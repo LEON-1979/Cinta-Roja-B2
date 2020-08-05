@@ -1,0 +1,23 @@
+{
+  "name": "cinta-roja",
+  "version": "1.0.0",
+  "description": "Cinta Roja B42",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LEON-1979/Cinta-Roja-B2.git"
+  },
+  "keywords": [
+    "git",
+    "batchB42"
+  ],
+  "author": "leon Mesa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LEON-1979/Cinta-Roja-B2/issues"
+  },
+  "homepage": "https://github.com/LEON-1979/Cinta-Roja-B2#readme"
+}

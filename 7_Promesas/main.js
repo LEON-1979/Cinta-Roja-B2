@@ -8,19 +8,18 @@ const getAsteroids = (year, month, day) => {
             const json = JSON.parse(body)
 
             if (!error && Response.statusCode === 200) {
-                //aqui no hay error
-                const asteroids = json.near_carth_objects["${year} ${month} ${day}"];
-                const res = asteroids.map({value} => "${value.id} ${value.name} ${value.is_potentially_hazardous_asteroids}");
-
-            resolve(res);
+                //aqui no hay error !error)
+                const asteroids = json.near_carth_objects["${year} ${month} ${day}"]
+                const res = asteroids.map({ value } = "${value.id} ${value.name} ${value.is_potentially_hazardous_asteroids}")
+                resolve(res);
             } else {
                 //handler de errores
-                switch (Response.statusCode){
-                 case 400:
-                    reject("${json.http_error} ${json.error.message}");
-                    break;
-                default;
-                    reject("occurrio un error desconocido");
+                switch (Response.statusCode) {
+                    case 400:
+                        reject("${json.http_error} ${json.error.message}");
+                        break;
+                    default:
+                        reject("occurrio un error desconocido");
                 }
             }
         })
@@ -29,4 +28,4 @@ const getAsteroids = (year, month, day) => {
 
 getAsteroids("2020", "06", "24")
     .then((res) => console.log(res)
-    .catch((err) => console.log(err);
+        .catch((err) => console.log(err);

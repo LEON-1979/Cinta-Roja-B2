@@ -3,13 +3,13 @@ const request = requiere("request");
 
 
 const obtenerBanda = (banda) => {
-    const URL = "http://www.theaudiodb.com/api/v1/json/1/search.php?s = ${banda}";
+    const URL = "http://www.theaudiodb.com/api/v1/json/1/search.php?s= ${banda}";
 
     request(URL, (error, response, body) => {
         if (error) {
             console.log("ocurrio un error");
         } else {
-            console.log("no hay erro");
+            console.log("no hay error");
             console.log(response.statusCode);
             //parse JSON
             const res = JSON.parse(body);
@@ -25,6 +25,7 @@ const obtenerBanda = (banda) => {
     });
 }
 
-obtenerBanda("juan Gabriel");
+obtenerBanda("Juan Gabriel");
 obtenerBanda("Morat");
 obtenerBanda("Temerarios");
+obtenerBanda("ueen");
